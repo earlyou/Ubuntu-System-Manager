@@ -59,4 +59,20 @@ public class MainController {
 			return "signin";
 		}
 	}
+	
+	@RequestMapping("/index/charts")
+	public String charts(Model m, HttpSession session) {
+		String msg = "";
+		if (session.getAttribute("user") != null) {
+			m.addAttribute("header", "/index/header");
+			m.addAttribute("sidebar","/index/sidebar");
+			m.addAttribute("main", "/charts/charts");
+			m.addAttribute("footer", "/index/footer");
+			return "index/index";
+		}else {
+			msg = "아이디와 비밀번호를 확인해주세요.";
+			m.addAttribute("fail", msg);
+			return "signin";
+		}
+	}
 }
