@@ -37,7 +37,7 @@ public class MainController {
 				throw new Exception();
 			}
 		} catch (Exception e) {
-			msg = "¾ÆÀÌµğ¿Í ºñ¹Ğ¹øÈ£¸¦ È®ÀÎÇØÁÖ¼¼¿ä.";
+			msg = "ï¿½ï¿½ï¿½Ìµï¿½ï¿½ ï¿½ï¿½Ğ¹ï¿½È£ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.";
 			m.addAttribute("fail", msg);
 			return "signin";
 		}
@@ -54,7 +54,7 @@ public class MainController {
 			m.addAttribute("footer", "/index/footer");
 			return "index/index";
 		}else {
-			msg = "¾ÆÀÌµğ¿Í ºñ¹Ğ¹øÈ£¸¦ È®ÀÎÇØÁÖ¼¼¿ä.";
+			msg = "ì•„ì´ë””ì™€ ë¹„ë°€ë²ˆí˜¸ë¥¼ í™•ì¸í•´ì£¼ì„¸ìš”.";
 			m.addAttribute("fail", msg);
 			return "signin";
 		}
@@ -70,7 +70,7 @@ public class MainController {
 			m.addAttribute("footer", "/index/footer");
 			return "index/index";
 		}else {
-			msg = "¾ÆÀÌµğ¿Í ºñ¹Ğ¹øÈ£¸¦ È®ÀÎÇØÁÖ¼¼¿ä.";
+			msg = "ì•„ì´ë””ì™€ ë¹„ë°€ë²ˆí˜¸ë¥¼ í™•ì¸í•´ì£¼ì„¸ìš”.";
 			m.addAttribute("fail", msg);
 			return "signin";
 		}
