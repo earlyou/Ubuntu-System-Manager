@@ -91,6 +91,7 @@ public class PrintGraphicsCards { // NOSONAR squid:S5786
 		} else {
 			for (GraphicsCard card : list) {
 				oshi.add(" " + String.valueOf(card));
+				oshi.add("vram: "+card.getVRam());
 			}
 		}
 	}

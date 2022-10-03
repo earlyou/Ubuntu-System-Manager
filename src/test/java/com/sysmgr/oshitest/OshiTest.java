@@ -95,7 +95,7 @@ public class OshiTest { // NOSONAR squid:S5786
 	 * @param args the arguments (unused)
 	 */
 	public static void main(String[] args) {
-
+		
 		logger.info("Initializing System...");
 		SystemInfo si = new SystemInfo();
 
